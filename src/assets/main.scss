@@ -1,73 +1,54 @@
-  body{
+body{
+  flex-flow: row wrap; 
 
-  }
-  .headerContainer{
-    width: 100%;
-    background-color: black;
-
-  }
-  .header{
-    background-color: black;
-    height: 3.5em;
-    display:flex;
-    align-items: center; 
-    padding:1em;
-    font-family: "Oswald", sans-serif;
-  }
-  .menu , .menu-last {
-    height: 100%;
-    padding-top:2em ;
-    p {
-    margin-top:1.75em;
-    font-size: 1.5em;
-    color:white; 
-    margin-right:1em;
-    margin-left:1em;
-    text-decoration: none;
-    display: inline;
-    }
-
-  }
-  .menu:hover,  .menu-last:hover{
-    background-color: gray;
-    height: 100%;
-    cursor: pointer;
-  }
-  .menu-last{
-    margin-left:auto;
+  .header { 
+    flex: 0 0 100% ; 
+    background-color:aquamarine;
+    height: 4em;
     
   }
-  
-  
   .content{
-    margin-top:0.5em;
-    .menuLeft{
-      font-size:1em ; 
-      color:white;
-      text-decoration: white;
-      font-family: "Oswald", sans-serif;
-      width: 100%;
-      text-align: center;
-      padding:0.2em;
-    }
-    .menuLeft:hover{
-      background-color: aquamarine;
-    }
+    flex: 0 0 100%;
+    background-color: antiquewhite;
+    height: 80vh;
+    display: flex;
+      .leftMenu{
+        flex: 0 0 18em; 
+        background-color: teal;
+        height: 100%;
+        order:1;
+      }
+      .mainContent{
+        flex: 1 1 auto;
+        background-color: white;
+        height: 100%;
+        order:2; 
+        .gridContent{
+          grid-gap: 2px; 
+          
+          .gridItem{
+            min-height: 12em;
+            border: solid 1px black;
+            &--test{
+              height: 40em;
+            }
+          }
+        }
+      }
+      .rightContent{
+        flex: 0 0 18em; 
+        height: 100%;
+        background-color: burlywood;
+        order:4;
+      }
+      .rightContentEnd{
+        flex: 0 0 15em;
+        order:3;
+        height: 100%;
+        background-color: aqua;
+      }
 
-    .leftBar {
-      padding-top:0.5em;
-      padding-bottom:0.5em;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      min-width: 8em;
-      max-width: 14em;
-      background-color: cadetblue;
-      min-height: 8em;
-  
-    }
   }
 
 
-
-
+}

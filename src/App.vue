@@ -8,48 +8,34 @@ export default {
 </script>
 
 <template>
-  <div class="headerContainer">
-    <div class="header">
-      <div class="menu">
-        <p>Item1</p>
-      </div>
-      <div class="menu">
-        <p>Item2</p>
-      </div>
-      <div class="menu">
-        <p>Item3</p>
-      </div>
-      <div class="menu-last">
-        <p>Item4</p>
-      </div>
+  <div class="header">
 
-    </div>
+
   </div>
   <div class="content">
-    <div class="leftBar">
-      <a href="#" class="menuLeft">Item1</a>
-      <a href="#" class="menuLeft">Item2</a>
-      <a href="#" class="menuLeft">Item3</a>
-      <a href="#" class="menuLeft">Item4</a>
-    </div>
+    <div class="leftMenu"></div>
     <div class="mainContent">
-      <Button>
-        <template v-slot:botao1>
-          nome
-        </template>
-        <template v-slot:botao2>
-          sobrenome
-        </template>
+      <div class="gridContent">
+        <div class="gridItem"></div>
+        <div class="gridItem--test"></div>
+        <div class="gridItem"></div>
+        <div class="gridItem"></div>
+        <div class="gridItem"></div>
+        <div class="gridItem"></div>
+        <div class="gridItem"></div>
+        <div class="gridItem"></div>
+        <div class="gridItem"></div>
 
-
-      </Button>
+      </div>
 
     </div>
-    <div class="rightBar">
+    <div class="rightContentEnd"></div>
+    <div class="rightContent">
 
     </div>
+
+
   </div>
-  <div class="footer"></div>
 </template>
 
 <style scoped>
